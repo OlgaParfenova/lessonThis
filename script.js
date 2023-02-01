@@ -1,6 +1,7 @@
 const myFunc = function(name, age) {
     return this.name + ", " + this.age;
-}
+} // у стрелочной функции нет контекста, в строгом режиме - undefined; в нестрогом - Window.
+// если стрелочная функция вызывается внутри обычной функции, то она возьмет контекст обычной функции
 
 const user= {
     name: 'Harry Potter',
